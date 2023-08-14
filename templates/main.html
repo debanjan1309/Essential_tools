@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Essentials</title>
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+</head>
+<body>
+    <h1>WELCOME USER!</h1>
+    <h3>CHOOSE YOUR OPTION</h3>
+    
+    <!-- Creating buttons -->
+    <a href="{{ url_for('index') }}" class="primary-button">Email Validator</a>
+    <a href="{{ url_for('password_checker') }}" class="secondary-button">Password Checker</a>
+    <a href="{{ url_for('index_password') }}" class="primary-button">Password Generator</a>
+    <a href="{{ url_for('scanner_port') }}" class="secondary-button">Scan open Ports</a>
+    <!-- <div class="lights-box">
+        <div class="light light1"></div>
+        <div class="light light2"></div>
+        <div class="light light3"></div>
+        <div class="light light4"></div>
+    </div> -->
+    
+    
+
+    <style>
+        /* Style for primary button */
+        .primary-button {
+            background-color: #007bff;
+            color: white;
+            display: inline-block;
+            padding: 10px 20px;
+            margin-right: 10px;
+            text-decoration: none;
+        }
+        
+        /* Style for secondary button */
+        .secondary-button {
+            background-color: #6c757d;
+            color: white;
+            display: inline-block;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+
+        body {
+        /* margin: 0;
+        display: flex;
+        justify-content: center; */
+        /* align-items: center; */
+        /* min-height: 100vh; */
+        background: #FAD4FF;
+        }
+
+        .lights-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: 300px;
+        }
+
+        .light {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin: 5px;
+            opacity: 0;
+            animation: fadeInOut 2s ease-in-out infinite;
+        }
+
+        .light1 {
+            background-color: #f06d06;
+            animation-delay: 0s;
+        }
+
+        .light2 {
+            background-color: #34a853;
+            animation-delay: 0.5s;
+        }
+
+        .light3 {
+            background-color: #4285f4;
+            animation-delay: 1s;
+        }
+
+        .light4 {
+            background-color: #ea4335;
+            animation-delay: 1.5s;
+        }
+
+        @keyframes fadeInOut {
+            0%, 100% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+
+
+    </style>
+</body>
+</html>
